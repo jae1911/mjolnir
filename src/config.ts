@@ -48,6 +48,7 @@ interface IConfig {
     fasterMembershipChecks: boolean;
     automaticallyRedactForReasons: string[]; // case-insensitive globs
     protectAllJoinedRooms: boolean;
+    pollReports: boolean;
     admin?: {
         enableMakeRoomAdminCommand?: boolean;
     }
@@ -116,6 +117,7 @@ const defaultConfig: IConfig = {
     fasterMembershipChecks: false,
     automaticallyRedactForReasons: ["spam", "advertising"],
     protectAllJoinedRooms: false,
+    pollReports: false,
     commands: {
         allowNoPrefix: false,
         additionalPrefixes: [],
